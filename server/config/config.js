@@ -14,6 +14,9 @@ if ( process.env.NODE_ENV === 'dev'){
     urlDB = process.env.MONGO_URI;
 }
 
+//Google clien id
+process.env.CLIENT_ID = process.env.CLIENT_ID || '76986315933-69ha94p65jc9jrdosr0kpo32m0og7i42.apps.googleusercontent.com';
+
 //vencimiento token
 process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
 
