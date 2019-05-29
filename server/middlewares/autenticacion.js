@@ -27,7 +27,7 @@ let verificarAdmin_Role = (req, res, next) => {
     return res.status(400).json({
       ok: false,
       err: {
-        message: "No tiene los permisos para crear/modificar usuarios"
+        message: "El usuario no es administrador"
       }
     });
   }
